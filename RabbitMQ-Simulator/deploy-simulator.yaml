@@ -9,7 +9,7 @@ spec:
     image: ablancog/producer-rabbitmq:0.0.16
     env:
     - name: TOTAL
-      value: "10000"
+      value: "100000"
     - name: RABBITMQ_USER
       value: "guest"
     - name: RABBITMQ_PASSWORD
