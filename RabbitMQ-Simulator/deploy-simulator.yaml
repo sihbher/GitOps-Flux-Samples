@@ -10,6 +10,8 @@ spec:
     env:
     - name: TOTAL
       value: "100000"
+    - name: CLIMEWORKS_RABBITMQ_SERVICE_HOST
+      value: "10.43.222.194"
     - name: RABBITMQ_USER
       valueFrom:
         secretKeyRef:
