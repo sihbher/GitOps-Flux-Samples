@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
   - name: producer
-    image: ablancog/producer-rabbitmq:latest
+    image: ablancog/producer-rabbitmq:0.0.15
     env:
     - name: TOTAL
       value: "100000"
