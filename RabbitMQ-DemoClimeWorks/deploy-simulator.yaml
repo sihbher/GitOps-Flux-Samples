@@ -5,7 +5,7 @@ metadata:
   namespace: rabbitmq-workspace
 spec:
   containers:
-  - name: producer
+  - name: producerv10
     image: ablancog/producer-rabbitmq:0.0.10
     env:
     - name: RABBITMQ_USER
