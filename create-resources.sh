@@ -1,0 +1,1 @@
+az aks get-credentials --name $arcClusterName --resource-group $resourceGroup --overwrite-existing

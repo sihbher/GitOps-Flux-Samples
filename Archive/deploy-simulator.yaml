@@ -6,20 +6,15 @@ metadata:
 spec:
   containers:
   - name: producer
-    image: ablancog/producer-rabbitmq:0.0.15
+    image: ablancog/producer-rabbitmq:0.0.16
     env:
     - name: TOTAL
-      value: "100000"
-    - name: CLIMEWORKS_RABBITMQ_SERVICE_HOST
-      value: "10.43.222.194"
+      value: "1000000"
     - name: RABBITMQ_USER
-      valueFrom:
-        secretKeyRef:
-          name: climeworks-rabbitmq-default-user
-          key: username
+      value: "guest"
     - name: RABBITMQ_PASSWORD
-      valueFrom:
-        secretKeyRef:
-          name: climeworks-rabbitmq-default-user
-          key: password
+      value: "guest"
+    - name: CLIMEWORKS_RABBITMQ_SERVICE_HOST
+      value: "10.0.0.4"
+
 
